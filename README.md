@@ -9,7 +9,7 @@ https://odoo.com/
 ## Docker Compose
 
 ```console
-$ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-odoo/master/docker-compose.yml > docker-compose.yml
+$ curl -sSL https://raw.githubusercontent.com/Yuny31/bitnami-docker-odoo/master/docker-compose.yml > docker-compose.yml
 $ docker-compose up -d
 ```
 
@@ -59,7 +59,7 @@ Running Odoo with a database server is the recommended way. You can either use d
 The main folder of this repository contains a functional [`docker-compose.yml`](https://github.com/bitnami/bitnami-docker-odoo/blob/master/docker-compose.yml) file. Run the application using it as shown below:
 
 ```console
-$ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-odoo/master/docker-compose.yml > docker-compose.yml
+$ curl -sSL https://raw.githubusercontent.com/Yuny31/bitnami-docker-odoo/master/docker-compose.yml > docker-compose.yml
 $ docker-compose up -d
 ```
 
@@ -101,7 +101,7 @@ To avoid inadvertent removal of these volumes you can [mount host directories as
 
 ### Mount host directories as data volumes with Docker Compose
 
-This requires a minor change to the [`docker-compose.yml`](https://github.com/bitnami/bitnami-docker-odoo/blob/master/docker-compose.yml) file present in this repository:
+This requires a minor change to the [`docker-compose.yml`](https://github.com/Yuny31/bitnami-docker-odoo/blob/master/docker-compose.yml) file present in this repository:
 
 ```yaml
 services:
@@ -149,7 +149,7 @@ In this case you need to specify the directories to mount on the run command. Th
 
 # Upgrade this application
 
-Bitnami provides up-to-date versions of PostgreSQL and Odoo, including security patches, soon after they are made upstream. We recommend that you follow these steps to upgrade your container. We will cover here the upgrade of the Odoo container. For the PostgreSQL upgrade see https://github.com/bitnami/bitnami-docker-postgresql/blob/master/README.md#upgrade-this-image
+Bitnami provides up-to-date versions of PostgreSQL and Odoo, including security patches, soon after they are made upstream. We recommend that you follow these steps to upgrade your container. We will cover here the upgrade of the Odoo container. For the PostgreSQL upgrade see https://github.com/Yuny31/bitnami-docker-postgresql/blob/master/README.md#upgrade-this-image
 
 1. Get the updated images:
 
@@ -168,7 +168,7 @@ Bitnami provides up-to-date versions of PostgreSQL and Odoo, including security 
 $ rsync -a /path/to/odoo-persistence /path/to/odoo-persistence.bkp.$(date +%Y%m%d-%H.%M.%S)
 ```
 
-Additionally, [snapshot the PostgreSQL data](https://github.com/bitnami/bitnami-docker-postgresql#step-2-stop-and-backup-the-currently-running-container)
+Additionally, [snapshot the PostgreSQL data](https://github.com/Yuny31/bitnami-docker-postgresql#step-2-stop-and-backup-the-currently-running-container)
 
 You can use these snapshots to restore the application state should the upgrade fail.
 
